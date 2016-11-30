@@ -1,261 +1,313 @@
 {
-    "Nodes": [{
-        "lvl": 0,
-        "name": "road",
-        "text": "Scientific Computing"
-    }, {
-        "lvl": 1,
-        "name": "ns",
-        "text": "Numerical Simulation"
-    }, {
-        "lvl": 1,
-        "name": "mm",
-        "text": "Mathematical Modelling"
-    }, {
-        "lvl": 1,
-        "name": "de",
-        "text": "Differential Equations"
-    }, {
-        "lvl": 1,
-        "name": "cs",
-        "text": "Computer Science"
-    }, {
-        "lvl": 1,
-        "name": "op",
-        "text": "Optimisation Theory"
-    }, {
-        "lvl": 1,
-        "name": "da",
-        "text": "Data Analysis"
-    }, {
-        "lvl": 1,
-        "name": "ml",
-        "text": "Machine Learning"
-    }, {
-        "lvl": 1,
-        "name": "uq",
-        "text": "Uncertainty Quantification"
-    }, {
-        "lvl": 3,
-        "name": "fldy",
-        "text": "Fluid Dynamics"
-    }, {
-        "lvl": 3,
-        "name": "fima",
-        "text": "Finance"
-    }, {
-        "lvl": 3,
-        "name": "cebi",
-        "text": "Cell Biology"
-    }, {
-        "lvl": 3,
-        "name": "qume",
-        "text": "Quantum Mechanics"
-    }, {
-        "lvl": 3,
-        "name": "glac",
-        "text": "Glaciology"
-    }, {
-        "lvl": 3,
-        "name": "masc",
-        "text": "Material Science"
-    }, {
-        "lvl": 3,
-        "name": "acou",
-        "text": "Acoustics"
-    }, {
-        "lvl": 3,
-        "name": "chem",
-        "text": "Chemistry"
-    }, {
-        "lvl": 3,
-        "name": "envi",
-        "text": "Environmental"
-    }, {
-        "lvl": 2,
-        "name": "c:scicomp1",
-        "text": "Scientific Computing I",
-        "dsc": "Description in English.<br>Description in English.",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:scicomp3",
-        "text": "Scientific Computing II",
-        "url": "https://goo.gl/NMdDTY"
-    }, {
-        "lvl": 2,
-        "name": "c:scicomp2",
-        "text": "Scientific Computing III",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:cp1",
-        "text": "Computer Programming I",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:cp3",
-        "text": "Computer Programming II",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:opt",
-        "text": "Optimisation",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:afem",
-        "text": "Applied Finite Element Methods",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:anm",
-        "text": "Advanced Numerical Methods",
-        "dsc": "This course is very interesting<br/> with long de,scription",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:pcs",
-        "text": "Projects in Computational Science",
-        "url": "https://goo.gl/pfZNDG",
-        "dsc": "This course is very interesting",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:ldsa",
-        "text": "Large Datasets for Scientific Applications",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:acc",
-        "text": "Applied Cloud Computing",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:hpc",
-        "text": "High Performance Computing",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:pp",
-        "text": "Parallel and Distributed Programming",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:cfpv",
-        "text": "Computational Finance - Pricing and Valuation",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }, {
-        "lvl": 2,
-        "name": "c:cfce",
-        "text": "Computational Finance - Calibration and Estimati,on",
-        "url": "http://www.it.uu.se/research/scientific_computing"
-    }],
-    "links": [{
-            "source": "ns",
-            "target": "road"
+    "Nodes": [
+
+
+      {
+            "lvl": 0,
+            "name": "road",
+            "text": "Scientific Computing"
+        },
+
+
+
+
+
+        {
+            "lvl": 1,
+            "name": "ns",
+            "text": "Numerical Simulation"
         }, {
-            "source": "mm",
-            "target": "road"
+            "lvl": 1,
+            "name": "mm",
+            "text": "Mathematical Modelling"
         }, {
-            "source": "de",
-            "target": "road"
+            "lvl": 1,
+            "name": "de",
+            "text": "Differential Equations"
         }, {
-            "source": "cs",
-            "target": "road"
+            "lvl": 1,
+            "name": "cs",
+            "text": "Computer Science"
         }, {
-            "source": "op",
-            "target": "road"
+            "lvl": 1,
+            "name": "op",
+            "text": "Optimisation Theory"
         }, {
-            "source": "da",
-            "target": "road"
+            "lvl": 1,
+            "name": "da",
+            "text": "Data Analysis"
         }, {
-            "source": "uq",
-            "target": "road"
+            "lvl": 1,
+            "name": "ml",
+            "text": "Machine Learning"
         }, {
-            "source": "ml",
-            "target": "road"
+            "lvl": 1,
+            "name": "uq",
+            "text": "Uncertainty Quantification"
+        },
+
+
+
+
+
+        {
+            "lvl": 2,
+            "name": "c:scicomp1",
+            "text": "Scientific Computing I",
+            "dsc": "Description in English.<br>Description in English.",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "fldy",
-            "target": "s:acc"
+            "lvl": 2,
+            "name": "c:scicomp3",
+            "text": "Scientific Computing II",
+            "url": "https://goo.gl/NMdDTY"
         }, {
-            "source": "fima",
-            "target": "s:acc"
+            "lvl": 2,
+            "name": "c:scicomp2",
+            "text": "Scientific Computing III",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "cebi",
-            "target": "s:acc"
+            "lvl": 2,
+            "name": "c:cp1",
+            "text": "Computer Programming I",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "qume",
-            "target": "s:acc"
+            "lvl": 2,
+            "name": "c:cp3",
+            "text": "Computer Programming II",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "glac",
-            "target": "s:acc"
+            "lvl": 2,
+            "name": "c:opt",
+            "text": "Optimisation",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "masc",
-            "target": "s:acc"
+            "lvl": 2,
+            "name": "c:afem",
+            "text": "Applied Finite Element Methods",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "acou",
-            "target": "s:acc"
+            "lvl": 2,
+            "name": "c:anm",
+            "text": "Advanced Numerical Methods",
+            "dsc": "This course is very interesting<br/> with long de,scription",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "chem",
-            "target": "s:acc"
+            "lvl": 2,
+            "name": "c:pcs",
+            "text": "Projects in Computational Science",
+            "url": "https://goo.gl/pfZNDG",
+            "dsc": "This course is very interesting",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "envi",
-            "target": "s:acc"
+            "lvl": 2,
+            "name": "c:ldsa",
+            "text": "Large Datasets for Scientific Applications",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "c:scicomp1",
-            "target": "fima"
+            "lvl": 2,
+            "name": "c:acc",
+            "text": "Applied Cloud Computing",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "c:scicomp3",
-            "target": "fima"
+            "lvl": 2,
+            "name": "c:hpc",
+            "text": "High Performance Computing",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "c:scicomp2",
-            "target": "fima"
+            "lvl": 2,
+            "name": "c:pp",
+            "text": "Parallel and Distributed Programming",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "c:cp1",
-            "target": "fima"
+            "lvl": 2,
+            "name": "c:cfpv",
+            "text": "Computational Finance - Pricing and Valuation",
+            "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
-            "source": "c:cp3",
-            "target": "fima"
+            "lvl": 2,
+            "name": "c:cfce",
+            "text": "Computational Finance - Calibration and Estimati,on",
+            "url": "http://www.it.uu.se/research/scientific_computing"
+        },
+
+
+
+
+
+        {
+            "lvl": 3,
+            "name": "fldy",
+            "text": "Fluid Dynamics"
         }, {
-            "source": "c:opt",
-            "target": "fima"
+            "lvl": 3,
+            "name": "fima",
+            "text": "Finance"
         }, {
-            "source": "c:afem",
-            "target": "fima"
+            "lvl": 3,
+            "name": "cebi",
+            "text": "Cell Biology"
         }, {
-            "source": "c:anm",
-            "target": "fima"
+            "lvl": 3,
+            "name": "qume",
+            "text": "Quantum Mechanics"
         }, {
-            "source": "c:pcs",
-            "target": "fima"
+            "lvl": 3,
+            "name": "glac",
+            "text": "Glaciology"
         }, {
-            "source": "c:ldsa",
-            "target": "fima"
+            "lvl": 3,
+            "name": "masc",
+            "text": "Material Science"
         }, {
-            "source": "c:acc",
-            "target": "fima"
+            "lvl": 3,
+            "name": "acou",
+            "text": "Acoustics"
         }, {
-            "source": "c:hpc",
-            "target": "fima"
+            "lvl": 3,
+            "name": "chem",
+            "text": "Chemistry"
         }, {
-            "source": "c:pp",
-            "target": "fima"
-        }, {
-            "source": "c:cfpv",
-            "target": "fima"
-        }, {
-            "source": "c:cfce",
-            "target": "fima"
-        }, {
-            "source": "c:cfce",
-            "target": "ml"
-        }, {
-            "source": "c:cfce",
-            "target": "da"
-        }, {
-            "source": "c:cfce",
-            "target": "ns"
+            "lvl": 3,
+            "name": "envi",
+            "text": "Environmental"
         }
-    ]
+    ],
+
+
+
+
+
+
+
+
+
+
+    "links": [
+
+
+
+      {
+        "source": "ns",
+        "target": "road"
+    }, {
+        "source": "mm",
+        "target": "road"
+    }, {
+        "source": "de",
+        "target": "road"
+    }, {
+        "source": "cs",
+        "target": "road"
+    }, {
+        "source": "op",
+        "target": "road"
+    }, {
+        "source": "da",
+        "target": "road"
+    }, {
+        "source": "uq",
+        "target": "road"
+    }, {
+        "source": "ml",
+        "target": "road"
+    },
+
+
+
+
+
+    {
+        "source": "fldy",
+        "target": "s:acc"
+    }, {
+        "source": "fima",
+        "target": "s:acc"
+    }, {
+        "source": "cebi",
+        "target": "s:acc"
+    }, {
+        "source": "qume",
+        "target": "s:acc"
+    }, {
+        "source": "glac",
+        "target": "s:acc"
+    }, {
+        "source": "masc",
+        "target": "s:acc"
+    }, {
+        "source": "acou",
+        "target": "s:acc"
+    }, {
+        "source": "chem",
+        "target": "s:acc"
+    }, {
+        "source": "envi",
+        "target": "s:acc"
+    },
+
+
+
+
+
+    {
+        "source": "c:scicomp1",
+        "target": "fima"
+    }, {
+        "source": "c:scicomp3",
+        "target": "fima"
+    }, {
+        "source": "c:scicomp2",
+        "target": "fima"
+    }, {
+        "source": "c:cp1",
+        "target": "fima"
+    }, {
+        "source": "c:cp3",
+        "target": "fima"
+    }, {
+        "source": "c:opt",
+        "target": "fima"
+    }, {
+        "source": "c:afem",
+        "target": "fima"
+    }, {
+        "source": "c:anm",
+        "target": "fima"
+    }, {
+        "source": "c:pcs",
+        "target": "fima"
+    }, {
+        "source": "c:ldsa",
+        "target": "fima"
+    }, {
+        "source": "c:acc",
+        "target": "fima"
+    }, {
+        "source": "c:hpc",
+        "target": "fima"
+    }, {
+        "source": "c:pp",
+        "target": "fima"
+    }, {
+        "source": "c:cfpv",
+        "target": "fima"
+    },
+
+
+
+    {
+        "source": "c:cfce",
+        "target": "fima"
+    }, {
+        "source": "c:cfce",
+        "target": "ml"
+    }, {
+        "source": "c:cfce",
+        "target": "da"
+    }, {
+        "source": "c:cfce",
+        "target": "ns"
+    }
+  ]
 }
