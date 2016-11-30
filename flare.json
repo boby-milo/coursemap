@@ -13,35 +13,28 @@
         {
             "lvl": 1,
             "name": "ns",
-            "text": "Numerical Simulation"
+            "text": "Numerical Methods",
+            "dsc": "#simulations #numerical_analysis #differential_equations"
         }, {
             "lvl": 1,
             "name": "mm",
-            "text": "Mathematical Modelling"
-        }, {
-            "lvl": 1,
-            "name": "de",
-            "text": "Differential Equations"
+            "text": "Mathematical Modelling",
+            "dsc": "#stochastic_models #differential_equations"
         }, {
             "lvl": 1,
             "name": "cs",
-            "text": "Computer Science"
+            "text": "Programming",
+            "dsc": "#algorithm_development #software_engineering #computer_science"
         }, {
             "lvl": 1,
             "name": "op",
-            "text": "Optimisation Theory"
+            "text": "Optimisation",
+            "dsc": "#linear_programming #convex_optimization"
         }, {
             "lvl": 1,
             "name": "da",
-            "text": "Data Analysis"
-        }, {
-            "lvl": 1,
-            "name": "ml",
-            "text": "Machine Learning"
-        }, {
-            "lvl": 1,
-            "name": "uq",
-            "text": "Uncertainty Quantification"
+            "text": "Data Analysis",
+            "dsc": "#big_data #machine_learning #uncertainty_quantification"
         },
 
 
@@ -186,9 +179,6 @@
             "source": "mm",
             "target": "road"
         }, {
-            "source": "de",
-            "target": "road"
-        }, {
             "source": "cs",
             "target": "road"
         }, {
@@ -197,14 +187,7 @@
         }, {
             "source": "da",
             "target": "road"
-        }, {
-            "source": "uq",
-            "target": "road"
-        }, {
-            "source": "ml",
-            "target": "road"
         },
-
 
 
 
