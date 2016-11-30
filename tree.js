@@ -29,23 +29,6 @@ var diagonal = d3.svg.diagonal()
         return [d.y, d.x];
     });
 
-var nodeDescription;
-var tip = d3.tip()
-    .attr('class', 'd3-tip')
-//    .direction('e')
-    .offset([-10, 0])
-    .html(function(d) {
-        var str = "";
-        if (d.url){
-            str = "<font color=\"red\">Double Click to open course page</font><br/><br/>";
-        }
-        if(d.dsc)
-            str += nodeDescription;
-            
-        return str;
-    })
-
-// Find the node with the specified text as it name
 function find(text) {
     "use strict";
     var i;
@@ -58,7 +41,7 @@ function find(text) {
 }
 
 // Bring the current selection to the front of drawing.
-// This is neccessary when there are to many links 
+// This is neccessary when there are to many links
 // and the highlighted link is behind all of them.
 d3.selection.prototype.moveToFront = function() {
   return this.each(function(){
@@ -67,33 +50,33 @@ d3.selection.prototype.moveToFront = function() {
 };
 
 // Reverse function to moveToFront
-d3.selection.prototype.moveToBack = function() { 
-    return this.each(function() { 
-        var firstChild = this.parentNode.firstChild; 
-        if (firstChild) { 
-            this.parentNode.insertBefore(this, firstChild); 
-        } 
-    }); 
+d3.selection.prototype.moveToBack = function() {
+    return this.each(function() {
+        var firstChild = this.parentNode.firstChild;
+        if (firstChild) {
+            this.parentNode.insertBefore(this, firstChild);
+        }
+    });
 };
 
 function switch_state (d, stat) {
-//    if (stat){
+    if (stat){
         d3.select("#" + d.id).moveToFront().classed("activelink", stat); // change link color
         d3.select("#" + d.id).moveToFront().classed("link", !stat); // change link color
-//    }else{
-//        d3.select("#" + d.id).moveToBack().classed("activelink", stat); // change link color
-//        d3.select("#" + d.id).moveToBack().classed("link", !stat); // change link color
-//    }
+    }else{
+        d3.select("#" + d.id).moveToBack().classed("activelink", stat); // change link color
+        d3.select("#" + d.id).moveToBack().classed("link", !stat); // change link color
+    }
 }
 
 function mouse_action(val, stat, direction) {
     "use strict";
     d3.select("#" + val.id).classed("active", stat);
-//    if(val.url)
-//        d3.select("#" + val.id).classed("witurl", !stat);
+    if(val.url)
+        d3.select("#" + val.id).classed("witurl", !stat);
 
     links.forEach(function (d) {
-        // This is used to reduce the amount of repetition in the code. 
+        // This is used to reduce the amount of repetition in the code.
         // For previous implementation see git log.
         var st = [d.source, d.target];
         for (var i = 0; i < 2; i++){
@@ -120,11 +103,26 @@ function mouse_action(val, stat, direction) {
     });
 }
 
+var tip = d3.tip()
+    .attr('class', 'd3-tip')
+//    .direction('e')
+    .offset([-10, 0])
+    .html(function(d) {
+        var str = "";
+        if (d.url && d.dsc){
+            str = "<font color=\"red\">Click to open website</font><br/><br/>";
+            str += d.dsc;
+        }else if(d.url)
+            str = "<font color=\"red\">Click to open website</font>";
+        else
+            str = d.dsc;
+
+        return str;
+    })
+
 function renderRelationshipGraph(data) {
     "use strict";
 
-    // Compute the placement of each node based on its level and the size
-    // of previous levels.
     data.Nodes.forEach(function (d, i) {
         var bv = 0;
         for (var j = 0; j < d.lvl; j++)
@@ -138,7 +136,7 @@ function renderRelationshipGraph(data) {
 
     data.links.forEach(function (d) {
         // If there is no node with the mentioned id, omit the link
-        if( find(d.source) && find(d.target)){
+        if( find(d.source) != null && find(d.target) != null ){
             links.push({
                 source: find(d.source),
                 target: find(d.target),
@@ -165,30 +163,20 @@ function renderRelationshipGraph(data) {
         .attr("id", function (d) { return d.id; })
         .attr("width", function (d) { return boxWidth[d.lvl];})
         .attr("height", boxHeight)
-        .attr("class", function (d) { return "node";})
+        .attr("class", function (d) { return d.url? "node witurl":"node";})
         .attr("rx", 6)
         .attr("ry", 6)
         .on("mouseover", function () {
             var d = d3.select(this).datum();
             mouse_action(d, true, "root");
-            // D O N T   R E M O V E   T H I S
-            // It is refered to in a comment.
-            if(d.url || d.dsc) { 
-                nodeDescription = "Click to see a short description";
-                tip.show(d)
-            }
+            if(d.url || d.dsc) tip.show(d)
         })
         .on("mouseout", function () {
             var d = d3.select(this).datum();
             mouse_action(d, false, "root");
-            tip.hide();
+            if(d.url || d.dsc) tip.hide(d)
         })
-//        .on("click", function(d) { if(d.url) window.open(d.url); }); // If a url is available, put a click event
-        // Use this if you wish the tooltip to show when the box is clicked 
-        // and open the url when the box is double clicked.
-        // Otherwise comment them and uncomment the line above this comment and the line in "mouseover" event.
-        .on("click", function(d) { if(d.url || d.dsc) { nodeDescription = d.dsc; tip.show(d);} }) // If a url is available, put a click event
-        .on("dblclick", function(d) { if(d.url) window.open(d.url); }); // If a url is available, put a click event
+        .on("click", function(d) { if(d.url) window.open(d.url); }); // If a url is available, put a click event
 
     node.append("text")
         .attr("class", "label")
@@ -196,7 +184,6 @@ function renderRelationshipGraph(data) {
         .attr("y", function (d) { return d.y + 15; })
         .text(function (d) { return d.text; });
 
-    // Create the links between the boxes
     links.forEach(function (li) {
         svg.append("path", "g")
             .attr("class", "link")
@@ -210,7 +197,7 @@ function renderRelationshipGraph(data) {
                     x: li.source.y + 0.5 * boxHeight,
                     y: li.source.x
                 };
-                
+
                 if (oSource.y < oTarget.y) {
                     oSource.y += boxWidth[li.source.lvl];
                 } else {
@@ -251,49 +238,45 @@ window.getWidthOfText = function(txt){
 d3.json("flare.json", function (json) {
     "use strict";
     data = json;
-    
-    // Initialize the array variables
+
     data.Nodes.forEach(function (d) {
         count[d.lvl] = 0;
         topMarginLvl[d.lvl] = 0;
         boxWidth[d.lvl] = minBoxWidth;
     });
     numLvls = count.length;
-    
-    // Find the number of items in each level and the width of each level.
+
+    // Find the number of items in each level and the size of each level.
     data.Nodes.forEach(function (d) {
         topMarginLvl[d.lvl] += 1;
         if(getWidthOfText(d.text) > boxWidth[d.lvl])
             boxWidth[d.lvl] = getWidthOfText(d.text);
     });
-    
-    // Compute the total width of the page.
+
     width = 0;
     for(var i = 0; i < boxWidth.length-1; i++){
         width += boxWidth[i] + gap.width;
     }
-    
+
     width += margin.left + margin.right + boxWidth[boxWidth.length-1];
-    
-    // Which level is has the most elements. Used to compute the height of the page
+
     var largest = Math.max.apply(Math, topMarginLvl);
-    
-    // Update height and width to have all the nodes in the image and also have 
+
+    // Update height and width to have all the nodes in the image and also have
     // the smallest image possible.
     height = margin.top + margin.bottom + largest*boxHeight + (largest - 1) * gap.height;
 //    width  = margin.left + margin.right + topMarginLvl.length*boxWidth + (topMarginLvl.length - 1)*gap.width;
-    
-    // Find the top margin of each column(Level).
+
     for (var i = 0; i < topMarginLvl.length; i++){
         topMarginLvl[i] = (height - topMarginLvl[i]*boxHeight - (topMarginLvl[i]-1)*gap.height)/2;
     }
-    
+
     svg = d3.select("#tree").append("svg")
                 .attr("width", width)
                 .attr("height", height)
                 .append("g");
-    
+
     svg.call(tip);
-    
+
     renderRelationshipGraph(data);
 });
