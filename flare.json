@@ -2,7 +2,7 @@
     "Nodes": [
 
 
-      {
+        {
             "lvl": 0,
             "name": "road",
             "text": "Scientific Computing"
@@ -182,132 +182,92 @@
 
 
 
-
     "links": [
 
 
 
-      {
-        "source": "ns",
-        "target": "road"
-    }, {
-        "source": "mm",
-        "target": "road"
-    }, {
-        "source": "de",
-        "target": "road"
-    }, {
-        "source": "cs",
-        "target": "road"
-    }, {
-        "source": "op",
-        "target": "road"
-    }, {
-        "source": "da",
-        "target": "road"
-    }, {
-        "source": "uq",
-        "target": "road"
-    }, {
-        "source": "ml",
-        "target": "road"
-    },
+        {
+            "source": "ns",
+            "target": "road"
+        }, {
+            "source": "mm",
+            "target": "road"
+        }, {
+            "source": "de",
+            "target": "road"
+        }, {
+            "source": "cs",
+            "target": "road"
+        }, {
+            "source": "op",
+            "target": "road"
+        }, {
+            "source": "da",
+            "target": "road"
+        }, {
+            "source": "uq",
+            "target": "road"
+        }, {
+            "source": "ml",
+            "target": "road"
+        },
 
 
 
 
 
-    {
-        "source": "fldy",
-        "target": "s:acc"
-    }, {
-        "source": "fima",
-        "target": "s:acc"
-    }, {
-        "source": "cebi",
-        "target": "s:acc"
-    }, {
-        "source": "qume",
-        "target": "s:acc"
-    }, {
-        "source": "glac",
-        "target": "s:acc"
-    }, {
-        "source": "masc",
-        "target": "s:acc"
-    }, {
-        "source": "acou",
-        "target": "s:acc"
-    }, {
-        "source": "chem",
-        "target": "s:acc"
-    }, {
-        "source": "envi",
-        "target": "s:acc"
-    },
+        {
+            "source": "fldy",
+            "target": "s:acc"
+        }, {
+            "source": "fima",
+            "target": "s:acc"
+        }, {
+            "source": "cebi",
+            "target": "s:acc"
+        }, {
+            "source": "qume",
+            "target": "s:acc"
+        }, {
+            "source": "glac",
+            "target": "s:acc"
+        }, {
+            "source": "masc",
+            "target": "s:acc"
+        }, {
+            "source": "acou",
+            "target": "s:acc"
+        }, {
+            "source": "chem",
+            "target": "s:acc"
+        }, {
+            "source": "envi",
+            "target": "s:acc"
+        },
 
 
 
 
 
-    {
-        "source": "c:scicomp1",
-        "target": "fima"
-    }, {
-        "source": "c:scicomp3",
-        "target": "fima"
-    }, {
-        "source": "c:scicomp2",
-        "target": "fima"
-    }, {
-        "source": "c:cp1",
-        "target": "fima"
-    }, {
-        "source": "c:cp3",
-        "target": "fima"
-    }, {
-        "source": "c:opt",
-        "target": "fima"
-    }, {
-        "source": "c:afem",
-        "target": "fima"
-    }, {
-        "source": "c:anm",
-        "target": "fima"
-    }, {
-        "source": "c:pcs",
-        "target": "fima"
-    }, {
-        "source": "c:ldsa",
-        "target": "fima"
-    }, {
-        "source": "c:acc",
-        "target": "fima"
-    }, {
-        "source": "c:hpc",
-        "target": "fima"
-    }, {
-        "source": "c:pp",
-        "target": "fima"
-    }, {
-        "source": "c:cfpv",
-        "target": "fima"
-    },
+        {
+            "source": "c:cfpv",
+            "target": "fima"
+        }, {
+            "source": "c:cfce",
+            "target": "fima"
+        },
 
 
 
-    {
-        "source": "c:cfce",
-        "target": "fima"
-    }, {
-        "source": "c:cfce",
-        "target": "ml"
-    }, {
-        "source": "c:cfce",
-        "target": "da"
-    }, {
-        "source": "c:cfce",
-        "target": "ns"
-    }
-  ]
+        {
+            "source": "c:cfce",
+            "target": "ml"
+        }, {
+            "source": "c:cfce",
+            "target": "da"
+        }, {
+            "source": "c:cfce",
+            "target": "ns"
+        }
+    ]
 }
