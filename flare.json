@@ -12,7 +12,7 @@
 
         {
             "lvl": 1,
-            "name": "ns",
+            "name": "na",
             "text": "Numerical Analysis",
             "dsc": "#numerical_simulations #numerical_methods #differential_equations"
         }, {
@@ -22,12 +22,12 @@
             "dsc": "#stochastic_models #differential_equations"
         }, {
             "lvl": 1,
-            "name": "cs",
+            "name": "cp",
             "text": "Computer Programming",
             "dsc": "#algorithm_development #software_engineering #computer_science"
         }, {
             "lvl": 1,
-            "name": "op",
+            "name": "mo",
             "text": "Mathematical Optimisation",
             "dsc": "#linear_programming #convex_optimization"
         }, {
@@ -47,12 +47,12 @@
             "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
             "lvl": 2,
-            "name": "c:scicomp3",
+            "name": "c:scicomp2",
             "text": "Scientific Computing II",
             "url": "https://goo.gl/NMdDTY"
         }, {
             "lvl": 2,
-            "name": "c:scicomp2",
+            "name": "c:scicomp3",
             "text": "Scientific Computing III",
             "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
@@ -62,7 +62,7 @@
             "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
             "lvl": 2,
-            "name": "c:cp3",
+            "name": "c:cp2",
             "text": "Computer Programming II",
             "url": "http://www.it.uu.se/research/scientific_computing"
         }, {
@@ -129,7 +129,7 @@
         }, {
             "lvl": 3,
             "name": "fima",
-            "text": "Finance"
+            "text": "Financial Industry"
         }, {
             "lvl": 3,
             "name": "cebi",
@@ -177,16 +177,16 @@
 
 
         {
-            "source": "ns",
+            "source": "na",
             "target": "road"
         }, {
             "source": "mm",
             "target": "road"
         }, {
-            "source": "cs",
+            "source": "cp",
             "target": "road"
         }, {
-            "source": "op",
+            "source": "mo",
             "target": "road"
         }, {
             "source": "da",
@@ -210,13 +210,13 @@
 
         {
             "source": "c:cfce",
-            "target": "op"
+            "target": "mo"
         }, {
             "source": "c:cfce",
             "target": "da"
         }, {
             "source": "c:cfce",
-            "target": "cs"
+            "target": "cp"
         },
 
 
@@ -235,10 +235,10 @@
             "target": "mm"
         }, {
             "source": "c:cfpv",
-            "target": "ns"
+            "target": "na"
         }, {
             "source": "c:cfpv",
-            "target": "cs"
+            "target": "cp"
         },
 
 
@@ -254,7 +254,7 @@
 
         {
             "source": "c:pp",
-            "target": "cs"
+            "target": "cp"
         },
 
 
@@ -269,7 +269,7 @@
 
         {
             "source": "c:hpc",
-            "target": "cs"
+            "target": "cp"
         },
 
 
@@ -285,7 +285,7 @@
 
         {
             "source": "c:acc",
-            "target": "cs"
+            "target": "cp"
         }, {
             "source": "c:acc",
             "target": "da"
@@ -303,7 +303,7 @@
 
         {
             "source": "c:ldsa",
-            "target": "cs"
+            "target": "cp"
         }, {
             "source": "c:ldsa",
             "target": "da"
@@ -322,10 +322,10 @@
 
         {
             "source": "c:pcs",
-            "target": "cs"
+            "target": "cp"
         }, {
             "source": "c:pcs",
-            "target": "ns"
+            "target": "na"
         },
 
 
@@ -341,10 +341,10 @@
 
         {
             "source": "c:anm",
-            "target": "cs"
+            "target": "cp"
         }, {
             "source": "c:anm",
-            "target": "ns"
+            "target": "na"
         },
 
 
@@ -360,10 +360,125 @@
 
         {
             "source": "c:afem",
-            "target": "cs"
+            "target": "cp"
         }, {
             "source": "c:afem",
-            "target": "ns"
+            "target": "na"
+        },
+
+
+
+
+
+        {
+            "source": "c:opt",
+            "target": "help"
+        },
+
+
+
+        {
+            "source": "c:opt",
+            "target": "mo"
+        }, {
+            "source": "c:opt",
+            "target": "cp"
+        },
+
+
+
+
+
+        {
+            "source": "c:cp2",
+            "target": "help"
+        },
+
+
+
+        {
+            "source": "c:cp2",
+            "target": "mo"
+        }, {
+            "source": "c:cp2",
+            "target": "cp"
+        },
+
+
+
+
+
+
+        {
+            "source": "c:cp1",
+            "target": "help"
+        },
+
+
+
+        {
+            "source": "c:cp1",
+            "target": "mo"
+        }, {
+            "source": "c:cp1",
+            "target": "cp"
+        },
+
+
+
+
+
+        {
+            "source": "c:scicomp3",
+            "target": "help"
+        },
+
+
+
+        {
+            "source": "c:scicomp3",
+            "target": "na"
+        }, {
+            "source": "c:scicomp3",
+            "target": "cp"
+        },
+
+
+
+
+
+        {
+            "source": "c:scicomp2",
+            "target": "help"
+        },
+
+
+
+        {
+            "source": "c:scicomp2",
+            "target": "na"
+        }, {
+            "source": "c:scicomp2",
+            "target": "cp"
+        },
+
+
+
+
+
+        {
+            "source": "c:scicomp1",
+            "target": "help"
+        },
+
+
+
+        {
+            "source": "c:scicomp1",
+            "target": "na"
+        }, {
+            "source": "c:scicomp1",
+            "target": "cp"
         }
     ]
 }
