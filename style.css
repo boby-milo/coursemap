@@ -175,8 +175,8 @@ rect {
     line-height: 1;
     font-weight: bold;
     padding: 12px;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    background: #AAA;
+    color: white;
     border-radius: 2px;
     text-align: center;
 }
@@ -190,7 +190,7 @@ rect {
     font-size: 10px;
     width: 100%;
     line-height: 1;
-    color: rgba(0, 0, 0, 0.8);
+    color: #AAA;
     content: "\25BC";
     position: absolute;
     text-align: center;

@@ -13,8 +13,8 @@
         {
             "lvl": 1,
             "name": "ns",
-            "text": "Numerical Methods",
-            "dsc": "#simulations #numerical_analysis #differential_equations"
+            "text": "Numerical Analysis",
+            "dsc": "#numerical_simulations #numerical_methods #differential_equations"
         }, {
             "lvl": 1,
             "name": "mm",
@@ -23,18 +23,18 @@
         }, {
             "lvl": 1,
             "name": "cs",
-            "text": "Programming",
+            "text": "Computer Programming",
             "dsc": "#algorithm_development #software_engineering #computer_science"
         }, {
             "lvl": 1,
             "name": "op",
-            "text": "Optimisation",
+            "text": "Mathematical Optimisation",
             "dsc": "#linear_programming #convex_optimization"
         }, {
             "lvl": 1,
             "name": "da",
             "text": "Data Analysis",
-            "dsc": "#big_data #machine_learning #uncertainty_quantification"
+            "dsc": "#big_data #machine_learning #uncertainty_quantification #statistics #data_science"
         },
 
 
@@ -307,6 +307,63 @@
         }, {
             "source": "c:ldsa",
             "target": "da"
+        },
+
+
+
+
+
+        {
+            "source": "c:pcs",
+            "target": "help"
+        },
+
+
+
+        {
+            "source": "c:pcs",
+            "target": "cs"
+        }, {
+            "source": "c:pcs",
+            "target": "ns"
+        },
+
+
+
+
+
+        {
+            "source": "c:anm",
+            "target": "help"
+        },
+
+
+
+        {
+            "source": "c:anm",
+            "target": "cs"
+        }, {
+            "source": "c:anm",
+            "target": "ns"
+        },
+
+
+
+
+
+        {
+            "source": "c:afem",
+            "target": "help"
+        },
+
+
+
+        {
+            "source": "c:afem",
+            "target": "cs"
+        }, {
+            "source": "c:afem",
+            "target": "ns"
         }
     ]
 }
