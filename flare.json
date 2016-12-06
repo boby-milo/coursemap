@@ -44,80 +44,77 @@
             "name": "c:scicomp1",
             "text": "Scientific Computing I",
             "dsc": "Description in English.<br>Description in English.",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD393"
         }, {
             "lvl": 2,
             "name": "c:scicomp2",
             "text": "Scientific Computing II",
-            "url": "https://goo.gl/NMdDTY"
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD395"
         }, {
             "lvl": 2,
             "name": "c:scicomp3",
             "text": "Scientific Computing III",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD397"
         }, {
             "lvl": 2,
             "name": "c:cp1",
             "text": "Computer Programming I",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD433"
         }, {
             "lvl": 2,
             "name": "c:cp2",
             "text": "Computer Programming II",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD722"
         }, {
             "lvl": 2,
             "name": "c:opt",
             "text": "Optimisation",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD184"
         }, {
             "lvl": 2,
             "name": "c:afem",
             "text": "Applied Finite Element Methods",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD056"
         }, {
             "lvl": 2,
             "name": "c:anm",
             "text": "Advanced Numerical Methods",
-            "dsc": "This course is very interesting<br/> with long de,scription",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD050"
         }, {
             "lvl": 2,
             "name": "c:pcs",
-            "text": "Projects in Computational Science",
-            "url": "https://goo.gl/pfZNDG",
-            "dsc": "This course is very interesting",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "text": "Project in Computational Science",
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD307"
         }, {
             "lvl": 2,
             "name": "c:ldsa",
             "text": "Large Datasets for Scientific Applications",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD267"
         }, {
             "lvl": 2,
             "name": "c:acc",
             "text": "Applied Cloud Computing",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD265"
         }, {
             "lvl": 2,
             "name": "c:hpc",
-            "text": "High Performance Computing",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "text": "High Performance Programming",
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD062"
         }, {
             "lvl": 2,
             "name": "c:pp",
             "text": "Parallel and Distributed Programming",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD070"
         }, {
             "lvl": 2,
             "name": "c:cfpv",
-            "text": "Computational Finance - Pricing and Valuation",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "text": "Computational Finance: Pricing and Valuation",
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD186"
         }, {
             "lvl": 2,
             "name": "c:cfce",
             "text": "Computational Finance - Calibration and Estimation",
-            "url": "http://www.it.uu.se/research/scientific_computing"
+            "url": "http://www.uu.se/en/admissions/master/selma/kursplan/?kKod=1TD188"
         },
 
 
