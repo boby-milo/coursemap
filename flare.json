@@ -130,7 +130,7 @@
         }, {
             "lvl": 3,
             "name": "cebi",
-            "text": "Cell Biology"
+            "text": "Systems Biology"
         }, {
             "lvl": 3,
             "name": "qume",
@@ -154,7 +154,7 @@
         }, {
             "lvl": 3,
             "name": "envi",
-            "text": "Environmental"
+            "text": "Climatology"
         }, {
             "lvl": 3,
             "name": "help",
@@ -300,9 +300,6 @@
 
         {
             "source": "c:ldsa",
-            "target": "cp"
-        }, {
-            "source": "c:ldsa",
             "target": "da"
         },
 
@@ -447,6 +444,15 @@
         {
             "source": "c:scicomp2",
             "target": "help"
+        }, {
+            "source": "c:scicomp2",
+            "target": "cebi"
+        }, {
+            "source": "c:scicomp2",
+            "target": "chem"
+        }, {
+            "source": "c:scicomp2",
+            "target": "envi"
         },
 
 
@@ -456,7 +462,7 @@
             "target": "na"
         }, {
             "source": "c:scicomp2",
-            "target": "cp"
+            "target": "mm"
         },
 
 
@@ -466,6 +472,9 @@
         {
             "source": "c:scicomp1",
             "target": "help"
+        }, {
+        	"source": "c:scicomp1",
+            "target": "glac"
         },
 
 
@@ -473,6 +482,9 @@
         {
             "source": "c:scicomp1",
             "target": "na"
+        }, {
+            "source": "c:scicomp1",
+            "target": "mm"
         }, {
             "source": "c:scicomp1",
             "target": "cp"
