@@ -118,35 +118,14 @@
         },
 
 
-
         {
-            "lvl": 3,
-            "name": "fldy",
-            "text": "Fluid Dynamics"
-        }, {
-            "lvl": 3,
-            "name": "fima",
-            "text": "Financial Industry"
-        }, {
-            "lvl": 3,
-            "name": "cebi",
-            "text": "Systems Biology"
-        }, {
-            "lvl": 3,
-            "name": "qume",
-            "text": "Quantum Mechanics"
-        }, {
-            "lvl": 3,
-            "name": "glac",
-            "text": "Glaciology"
-        }, {
-            "lvl": 3,
-            "name": "masc",
-            "text": "Material Science"
-        }, {
             "lvl": 3,
             "name": "acou",
             "text": "Acoustics"
+        }, {
+            "lvl": 3,
+            "name": "cebi",
+            "text": "Bioinformatics"
         }, {
             "lvl": 3,
             "name": "chem",
@@ -157,9 +136,46 @@
             "text": "Climatology"
         }, {
             "lvl": 3,
-            "name": "help",
-            "text": "Help!"
+            "name": "fima",
+            "text": "Financial Industry"
+        }, {
+            "lvl": 3,
+            "name": "fldy",
+            "text": "Fluid Dynamics"
+        }, {
+            "lvl": 3,
+            "name": "gami",
+            "text": "Gaming"
+        }, {
+            "lvl": 3,
+            "name": "glac",
+            "text": "Glaciology"
+        }, {
+            "lvl": 3,
+            "name": "masc",
+            "text": "Material Science"
+        }, {
+            "lvl": 3,
+            "name": "medi",
+            "text": "Medicine"
+        }, {
+            "lvl": 3,
+            "name": "qume",
+            "text": "Quantum Mechanics"
+        }, {
+            "lvl": 3,
+            "name": "robo",
+            "text": "Robotics"
+        }, {
+            "lvl": 3,
+            "name": "soli",
+            "text": "Solid Mechanics"
+        }, {
+            "lvl": 3,
+            "name": "ther",
+            "text": "Thermodynamics"
         }
+
     ],
 
 
@@ -211,9 +227,6 @@
         }, {
             "source": "c:cfce",
             "target": "da"
-        }, {
-            "source": "c:cfce",
-            "target": "cp"
         },
 
 
@@ -233,9 +246,6 @@
         }, {
             "source": "c:cfpv",
             "target": "na"
-        }, {
-            "source": "c:cfpv",
-            "target": "cp"
         },
 
 
@@ -275,7 +285,7 @@
 
         {
             "source": "c:acc",
-            "target": "help"
+            "target": "cebi"
         },
 
 
@@ -293,7 +303,7 @@
 
         {
             "source": "c:ldsa",
-            "target": "help"
+            "target": "cebi"
         },
 
 
@@ -306,8 +316,49 @@
 
 
 
-
         {
+            "source": "c:pcs",
+            "target": "ther"
+        }, {
+            "source": "c:pcs",
+            "target": "soli"
+        }, {
+            "source": "c:pcs",
+            "target": "robo"
+        }, {
+            "source": "c:pcs",
+            "target": "qume"
+        }, {
+            "source": "c:pcs",
+            "target": "medi"
+        }, {
+            "source": "c:pcs",
+            "target": "cebi"
+        }, {
+            "source": "c:pcs",
+            "target": "fldy"
+        }, {
+            "source": "c:pcs",
+            "target": "gami"
+        }, {
+            "source": "c:pcs",
+            "target": "glac"
+        }, {
+            "source": "c:pcs",
+            "target": "masc"
+        }, {
+            "source": "c:pcs",
+            "target": "chem"
+        }, {
+            "source": "c:pcs",
+            "target": "envi"
+        }, {
+            "source": "c:pcs",
+            "target": "fima"
+        }, {
+            "source": "c:pcs",
+            "target": "acou"
+        }, {
             "source": "c:pcs",
             "target": "help"
         },
@@ -315,11 +366,11 @@
 
 
         {
-            "source": "c:pcs",
-            "target": "cp"
-        }, {
             "source": "c:pcs",
             "target": "na"
+        }, {
+            "source": "c:pcs",
+            "target": "mm"
         },
 
 
@@ -332,11 +383,7 @@
         },
 
 
-
-        {
-            "source": "c:anm",
-            "target": "cp"
-        }, {
+         {
             "source": "c:anm",
             "target": "na"
         },
@@ -347,15 +394,12 @@
 
         {
             "source": "c:afem",
-            "target": "help"
+            "target": "fldy"
         },
 
 
 
-        {
-            "source": "c:afem",
-            "target": "cp"
-        }, {
+       {
             "source": "c:afem",
             "target": "na"
         },
@@ -374,9 +418,6 @@
         {
             "source": "c:opt",
             "target": "mo"
-        }, {
-            "source": "c:opt",
-            "target": "cp"
         },
 
 
@@ -385,7 +426,13 @@
 
         {
             "source": "c:cp2",
-            "target": "help"
+            "target": "robo"
+        }, {
+            "source": "c:cp2",
+            "target": "medi"
+        }, {
+            "source": "c:cp2",
+            "target": "gami"
         },
 
 
@@ -405,14 +452,20 @@
 
         {
             "source": "c:cp1",
-            "target": "help"
+            "target": "robo"
+        }, {
+            "source": "c:cp1",
+            "target": "medi"
+        }, {
+            "source": "c:cp1",
+            "target": "gami"
         },
 
 
 
         {
             "source": "c:cp1",
-            "target": "mo"
+            "target": "mm"
         }, {
             "source": "c:cp1",
             "target": "cp"
@@ -425,6 +478,15 @@
         {
             "source": "c:scicomp3",
             "target": "help"
+        }, {
+            "source": "c:scicomp3",
+            "target": "fldy"
+        }, {
+            "source": "c:scicomp3",
+            "target": "ther"
+        }, {
+            "source": "c:scicomp3",
+            "target": "soli"
         },
 
 
@@ -432,9 +494,6 @@
         {
             "source": "c:scicomp3",
             "target": "na"
-        }, {
-            "source": "c:scicomp3",
-            "target": "cp"
         },
 
 
