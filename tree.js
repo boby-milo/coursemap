@@ -187,8 +187,8 @@ function renderRelationshipGraph(data) {
             if (d.url || d.dsc) tip.hide(d)
         })
         .on("click", function(d) {
-            // if(d.url) window.open(d.url); // If a url is available, put a click event
-            if (d.url || d.dsc) tip.show(d);
+             if(d.url) window.open(d.url); // If a url is available, put a click event
+//            if (d.url || d.dsc) tip.show(d);
         });
 
     node.append("text")

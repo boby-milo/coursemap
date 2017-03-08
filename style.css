@@ -148,7 +148,7 @@ rect {
 .activelink {
     fill: none;
     stroke: #990000;
-    stroke-width: 2.5px;
+    stroke-width: 1.5px;
 }
 
 .label {
@@ -162,7 +162,7 @@ rect {
     fill: none;
     stroke: #AAA;
     /* #CCC light gray, #BBB mid gray, #AAA dark gray*/
-    stroke-width: 1.5px;
+    stroke-width: 1px;
 }
 
 .witurl {
